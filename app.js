@@ -2,8 +2,8 @@ var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
     mongoose    = require("mongoose"),
-    Campground  = require('./models/campground.js');
-    Comment     = require("./models/comment");
+    Campground  = require('./models/campground.js'),
+    Comment     = require("./models/comment"),
     seedDB      = require("./seed");
 
 // seedDB();
@@ -12,6 +12,7 @@ mongoose.connect("mongodb://localhost/yelp_camp");
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname + "/public"));
 
 
 app.get("/", function(req, res){
@@ -19,7 +20,7 @@ app.get("/", function(req, res){
 });
 
 // =====================
-//   CAMPGROUNDS ROUTE
+// = CAMPGROUNDS ROUTE =
 // =====================
 
 // INDEX
