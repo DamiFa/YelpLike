@@ -35,8 +35,8 @@
             </div>
 
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <% campground.comments.forEach(function(comment){ %>
+                <% campground.comments.forEach(function(comment){ %>
+                    <li class="list-group-item">
                         <strong><%= comment.author.username %></strong> 
                         <span class="float-right">10 days ago</span>
                         <p class="mb-1">
@@ -48,8 +48,8 @@
                                 <button class="btn btn-sm btn-outline-danger">Delete</button>
                             </form>
                         <% } %>
-                    <% }); %>
-                </li>
+                    </li>
+                <% }); %>
             </ul>
         </div>
 

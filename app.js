@@ -52,3 +52,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.listen(3000, function(){
     console.log("YelpCamp READY !!");
 });
+
+// 
