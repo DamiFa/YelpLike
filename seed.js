@@ -35,7 +35,7 @@ function seedDB(){
                 if(err) console.log(err);
                 else{
                     console.log("Comments Deleted");
-                    data.forEach(function(seed){
+                    /* data.forEach(function(seed){
                         Campgrounds.create(seed, function(err, campCreated){
                             if(err) console.log(err);
                             else {
@@ -52,7 +52,7 @@ function seedDB(){
                                 });
                             }
                         });
-                    });
+                    }); */
                 }
             });
         }

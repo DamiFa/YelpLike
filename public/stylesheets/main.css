@@ -3,3 +3,7 @@
     object-position: center; /* Center the image within the element */
     height: 45%;
 }
+
+.delete-form {
+    display: inline;
+}
