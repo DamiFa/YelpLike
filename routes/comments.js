@@ -52,7 +52,6 @@ router.put("/:comment_id", middleware.checkCommentOwnership, function(req, res){
         else {
             res.redirect("/campgrounds/" + req.params.id);
         }
-
     });
 });
 

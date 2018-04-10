@@ -53,8 +53,6 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 //Quand on use des routes avec un path prédéfini dans lequel il y a un param il faut ajouter {mergeParams: true} dans le router de la route (ici comments)
 
 // START SERVER
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, process.env.IP ,function(){
     console.log("YelpCamp READY !!");
 });
-
-// 
